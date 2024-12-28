@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUZZLE</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    ></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="spinner__container">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <header class="header">
+        <a class="logo" href="#services">PUZZLE</a>
+      </header>
+      <main>
+        <h1 class="warning">
+          Warning!
+          <span>Text file only, fragments should contain only numbers!</span>
+        </h1>
+        <div class="buttons">
+          <div class="input-button">
+            <input type="file" id="fileInput" />
+            <label for="fileInput" class="custom-button">Choose file</label>
+          </div>
+          <span id="fileName" class="file-name"></span>
+          <div class="process-button">
+            <button onclick="processFile()">Process the file</button>
+          </div>
+        </div>
+        <div id="result"></div>
+      </main>
+    </div>
+  </body>
+</html>
